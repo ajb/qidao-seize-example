@@ -12,7 +12,7 @@ contract FakeOracle {
     fakeAnswer = _fakeAnswer;
   }
 
-	function latestRoundData() external view returns (uint80, int256 answer, uint256, uint256, uint80) {
+  function latestRoundData() external view returns (uint80, int256 answer, uint256, uint256, uint80) {
     return (0, fakeAnswer, 0, 0, 0);
   }
 }
